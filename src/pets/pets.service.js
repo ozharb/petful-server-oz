@@ -1,4 +1,5 @@
 const Queue = require('../queue/Queue')
+const { cats, dogs, people } = require('../store')
 const store = require('../store')
 
 // Set up initial data.
@@ -18,6 +19,14 @@ const PetsService = {
   get() {
     // Return the pets next in line to be adopted.
     return pets
+  },
+  getCats() {
+    // Return the pets next in line to be adopted.
+    return pets.cats.all()
+  },
+  getDogs(){
+   
+    return pets.dogs.all();
   },
 
   dequeue(type) {

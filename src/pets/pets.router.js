@@ -10,7 +10,14 @@ PetsRouter.get('/', (req, res) => {
   // Return all pets currently up for adoption.
   res.json(PetsService.get())
 })
-
+PetsRouter.get('/dogs', (req, res) => {
+  // Return all pets currently up for adoption.
+  res.json(PetsService.getDogs())
+})
+PetsRouter.get('/cats', (req, res) => {
+  // Return all pets currently up for adoption.
+  res.json(PetsService.getCats())
+})
 PetsRouter.delete('/:pet_type', (req, res) => {
   // Remove a pet from adoption.
   PetsService.dequeue(req.params.pet_type)
