@@ -17,12 +17,14 @@ PeopleRouter
   // Add a new person to the queue.
   const { person_name } = req.body;
   const newPerson = { person_name };
-  if (newPerson == null) {
-    return res.status(400).json({
-      error: { message: `Missing '${key}' in request body` }
-    });
+  for (const [key, value] of Object.entries(newPerson)) {
+    if (value == null) {
+      return res.status(400).json({
+        error: { message: `Missing '${key}' in request body` }
+      });
+    }
   }
-  PeopleService.enqueue(newPerson)
+  PeopleService.enqueue(newPerson.person_name)
   
   res
   .status(201)

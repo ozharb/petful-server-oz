@@ -1,5 +1,7 @@
 # Petful Server
 
+## Admin feature
+send PATCH request 'https://petful-server-oz.herokuapp.com/api/pets/restock' to restore the data
 
 ## Scripts
 

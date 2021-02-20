@@ -31,7 +31,7 @@ PetsRouter.get('/:pet_type', (req, res) => {
 })
 
 PetsRouter.patch('/restock', (req, res) => {
-  // Return cat or dog currently up for adoption.
+  // Restore data
   PetsService.getPetsBack()
   res.status(204).end()
 })
