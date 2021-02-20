@@ -16,16 +16,17 @@ store.dogs.forEach(dog => pets.dogs.enqueue(dog))
 // --------------------
 
 const PetsService = {
+
   get() {
     // Return the pets next in line to be adopted.
     return pets
   },
   getCats() {
-    // Return the pets next in line to be adopted.
+    // return all cats
     return pets.cats.all()
   },
   getDogs(){
-   
+   //return all dogs
     return pets.dogs.all();
   },
 
@@ -46,6 +47,12 @@ const PetsService = {
       type = 'dogs'
     }
     return pets[type].first.value
+  },
+  
+getPetsBack(){
+store.cats.forEach(cat => pets.cats.enqueue(cat))
+store.dogs.forEach(dog => pets.dogs.enqueue(dog))
+    return pets
   }
 }
 module.exports = PetsService;

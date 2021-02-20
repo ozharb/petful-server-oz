@@ -30,4 +30,10 @@ PetsRouter.get('/:pet_type', (req, res) => {
   res.json(PetsService.getByType(req.params.pet_type))
 })
 
+PetsRouter.patch('/restock', (req, res) => {
+  // Return cat or dog currently up for adoption.
+  PetsService.getPetsBack()
+  res.status(204).end()
+})
+
 module.exports = PetsRouter
