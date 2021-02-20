@@ -31,5 +31,11 @@ PeopleRouter
   .json(newPerson);
 
 })
+.delete((req, res) => {
+  // Remove a person from the line.
+  PeopleService.dequeue()
+  
+  res.status(204).end()
+})
 
 module.exports = PeopleRouter;
