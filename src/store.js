@@ -3,7 +3,8 @@ module.exports = {
     'Randy Lahey',
     'Trevor Cory',
     'Jim Lahey',
-    'Pam Beasley'
+    'Pam Beasley',
+    'Michael Scott'
   ],
 
   dogs: [
