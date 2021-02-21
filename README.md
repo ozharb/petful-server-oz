@@ -39,7 +39,7 @@ Does not require authentication.
 API supports Get, Post, Delete, and Patch requests.
 
 #### Endpoints
-* `/pets ` get all dogs and cats a a queue data structure
+* `/pets ` get all dogs and cats as a queue data structure
 * `/pets/:type` type may be dogs or cats to get type-specific data. Supports GET and DELETE requests.
 * `/people` get all people in line including registered user name if one exists. Supports GET and DELETE requests.
 * `/pets/restock` restocks pets (must be PATCH request)
