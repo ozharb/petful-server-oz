@@ -32,7 +32,7 @@ The Base URL is the root URL for all of the API, if you ever make a request get 
 The Base URL is https://petful-server-oz.herokuapp.com/api 
 
 #### Authentication
-Does not require bearer token. 
+Does not require authentication. 
 
 
 #### CRUD requests
