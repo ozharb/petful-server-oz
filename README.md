@@ -7,7 +7,7 @@ This is the backend for `Fifo`.  A live version of the app can be found at [http
 The front end client can be found at [https://github.com/ozharb/petful-client].
 
 ## Introduction
-Fifo is an adoption app where you add your name to get in line and wait for an availabl cat or dog you may choose to adopt.
+Fifo is an adoption app where you add your name to get in line and wait for an available cat or dog you may choose to adopt.
 ### The process:
 - Add your name to get in line
 - While you wait, you can view the dogs and cats available for adoption
