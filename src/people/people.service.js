@@ -26,7 +26,12 @@ const PeopleService = {
   dequeue() {
     // Remove a person from the queue.
     people.dequeue()
-  }
+  },
+  queueUpPeople(){
+    store.people.forEach(person => people.enqueue(person))
+  
+        return people
+      }
 }
 
 module.exports =  PeopleService

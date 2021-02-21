@@ -38,4 +38,12 @@ PeopleRouter
   res.status(204).end()
 })
 
+PeopleRouter
+.route('/restock')
+.patch((req, res) => {
+  // Restore data
+  PeopleService.queueUpPeople()
+  res.status(204).end()
+})
+
 module.exports = PeopleRouter;
